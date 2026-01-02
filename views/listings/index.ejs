@@ -110,7 +110,7 @@
                   </a>
                 </div>
             </div>
-        </div>
+        </div> 
 
 
         <div class="carousel-item">
@@ -203,11 +203,6 @@
 </div>
 
 
-
-  
-
- 
-
 <% if (noListingsMessage) { %>
   <div class="alert alert-warning"><%= noListingsMessage %></div>
 <% } %>
@@ -265,7 +260,6 @@
     var navbarToggler = document.querySelector('.navbar-toggler');
 
     navbarToggler.addEventListener('click', function() {
-      // Toggle the "active" class on the button itself to show/hide the cross
       this.classList.toggle('active');
     });
   });

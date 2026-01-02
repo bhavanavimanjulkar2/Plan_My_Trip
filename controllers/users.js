@@ -30,7 +30,7 @@ module.exports.renderLoginForm = (req, res) => {
 
 
 module.exports.login = async(req, res) => {
-    req.flash("success", "Welcome Back to Wanderlust.! ");
+    req.flash("success", "Welcome Back to Plan My Trip..! ");
     let redirectUrl = res.locals.redirectUrl || "/listings";
     res.redirect(redirectUrl);
 };
@@ -40,7 +40,7 @@ module.exports.logout = (req, res, next) => {
         if(err) {
             return next(err);
         }
-        req.flash("success", "Your are logged out..!");
+        req.flash("success", "You are logged out..!");
         res.redirect("/listings");
     });
 }

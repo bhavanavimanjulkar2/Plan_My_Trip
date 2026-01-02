@@ -5,14 +5,28 @@ const wrapAsync = require("./utils/wrapAsync.js");
 const { listingSchema, reviewSchema } = require("./schema.js");
 const Joi = require('joi');
 
+// module.exports.isLoggedIn = (req, res, next) => {
+//     if(!req.isAuthenticated()){
+//         req.session.redirectUrl = req.originalUrl;
+//         req.flash("error", "You must be logged in to create listing");
+//         return res.redirect("/login");
+//     }
+//     next();
+// };
+
 module.exports.isLoggedIn = (req, res, next) => {
     if(!req.isAuthenticated()){
-        req.session.redirectUrl = req.originalUrl;
-        req.flash("error", "You must be logged in to create listing");
+        
+        if (req.method === "GET") {
+            req.session.redirectUrl = req.originalUrl;
+        }
+        req.flash("error", "You must be logged in.!");
         return res.redirect("/login");
     }
     next();
 };
+
+
 
 module.exports.saveRedirectUrl = (req, res, next) => {
     if(req.session.redirectUrl){

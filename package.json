@@ -4,7 +4,7 @@
     "node": "20.15.0"
   },
  
-  "name": "majorproject",
+  "name": "planmytrip",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "Bhavana Vijay Manjulkar",
   "license": "ISC",
-  "description": "This is my major project.",
+  "description": "This is my plan my trip project.",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.16.1",
     "cloudinary": "^1.21.0",
