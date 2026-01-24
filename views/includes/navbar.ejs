@@ -16,6 +16,12 @@
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
+          <a class="nav-link" href="/home">PlanMyTrip</a>
+        </div>
+
+        <br>
+
+        <div class="navbar-nav">
           <a class="nav-link" href="/listings">Explore</a>
         </div>
 
@@ -41,13 +47,13 @@
         </div>
 
         <div class="navbar-nav ms-auto">
-          <a class="nav-link pill-btn" href="/listings/new">Add New Place</a>
+          <a class="nav-link pill-btn btn" href="/listings/new">Add New Place</a>
           <% if(!currUser) { %>
-          <a class="nav-link pill-btn"  href="/signup"><b>Sign Up</b></a>
-          <a class="nav-link pill-btn" href="/login"><b>Log In</b></a>
+          <a class="nav-link pill-btn btn"  href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link pill-btn btn" href="/login"><b>Log In</b></a>
           <% } %>
           <% if(currUser) { %>
-          <a class="nav-link pill-btn" href="/logout"><b>Log Out</b></a>
+          <a class="nav-link pill-btn btn" href="/logout"><b>Log Out</b></a>
           <% } %>
         </div>
       </div>
