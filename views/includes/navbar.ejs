@@ -47,13 +47,13 @@
         </div>
 
         <div class="navbar-nav ms-auto">
-          <a class="nav-link pill-btn btn" href="/listings/new">Add New Place</a>
+          <a class="nav-link pill-btn search-btn" href="/listings/new">Add New Place</a>
           <% if(!currUser) { %>
-          <a class="nav-link pill-btn btn"  href="/signup"><b>Sign Up</b></a>
-          <a class="nav-link pill-btn btn" href="/login"><b>Log In</b></a>
+          <a class="nav-link pill-btn search-btn"  href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link pill-btn search-btn" href="/login"><b>Log In</b></a>
           <% } %>
           <% if(currUser) { %>
-          <a class="nav-link pill-btn btn" href="/logout"><b>Log Out</b></a>
+          <a class="nav-link pill-btn search-btn" href="/logout"><b>Log Out</b></a>
           <% } %>
         </div>
       </div>
