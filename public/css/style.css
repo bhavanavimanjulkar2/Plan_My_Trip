@@ -25,6 +25,22 @@ body{
     color: #222222 !important;
 }
 
+
+.logo{
+  font-size: 25px;
+  font-weight: 600;
+  color: #fe424d !important;
+  text-decoration: none !important;
+  letter-spacing: 1px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo span{
+  color: #ff9f1c;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+
 /* Smooth transition for navbar collapse */
 .collapse {
   transition: height 0.5s ease; /* Adds smooth slide-down effect */
@@ -204,12 +220,55 @@ body{
   }
 
 
+  
+.btn-orange{
+  background-color: #fe424d;
+  color: #fff !important;
+  padding: 6px 15px;
+  border-radius: 17px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  height: auto;
+}
+
+.btn-orange:hover{
+  background-color: #d44f22;
+  transform: translateY(-1px);
+}
+
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+.mobile-btn{
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
   /* Filters icons */
 
   #filters{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 15px;
   }
   .filter {
     text-align: center;
