@@ -27,8 +27,8 @@ const listingSchema = new Schema({
     },
     geometry:  {
         type: {
-          type: String, // Don't do `{ location: { type: String } }`
-          enum: ['Point'], // 'location.type' must be 'Point'
+          type: String, 
+          enum: ['Point'], 
           required: true
         },
         coordinates: {
@@ -41,7 +41,11 @@ const listingSchema = new Schema({
         enum: ["arctic", "farms", "trending", "rooms", "adventurous", "castle", "wild", "camping","beach", "desert"],
         required: true
       }
-});
+},
+  {
+    timestamps: true
+  }
+);
 
 listingSchema.post("findOneAndDelete", async (listing) => {
     if(listing) {

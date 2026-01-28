@@ -23,8 +23,10 @@ module.exports.index = async (req, res) => {
     }
   
     // Fetch listings based on the query
-    const allListings = await Listing.find(query);
+    // const allListings = await Listing.find(query);
   
+    const allListings = await Listing.find(query).sort({createdAt:-1});
+
     // Message for no listings found
     const noListingsMessage = allListings.length === 0 ? "No listings found matching your search criteria." : null;
   
