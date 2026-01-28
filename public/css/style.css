@@ -26,18 +26,31 @@ body{
 }
 
 
-.logo{
+/* .logo{
   font-size: 25px;
   font-weight: 600;
   color: #fe424d !important;
   text-decoration: none !important;
   letter-spacing: 1px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+
+.navbar-brand{
+  color: #fe424d !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
+.navbar-brand:hover{
+  color: #d44f22;
+  text-transform: none;
+}
+
+
 .logo span{
   color: #ff9f1c;
-  font-weight: 500;
-  font-family: cursive;
+  /* font-weight: 600;
+  font-family: cursive; */
 }
 
 
