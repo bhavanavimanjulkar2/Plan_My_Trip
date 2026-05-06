@@ -14,4 +14,4 @@ Deployment: Render.com
 
 Version Control: Git, GitHub
 
-
+Live: https://plan-my-trip-nhgt.onrender.com/
